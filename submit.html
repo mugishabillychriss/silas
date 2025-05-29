@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Submit Your Case - Ngurinzira Silas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Submit Your Case</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="submit.html">Submit Case</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="submit_case.php" method="POST" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone">
+      </fieldset>
+
+      <fieldset>
+        <legend>Case Details</legend>
+        <label for="message">Describe Your Case:</label>
+        <textarea name="message" id="message" rows="6" required></textarea>
+
+        <label for="caseFile">Upload Case File (PDF):</label>
+        <input type="file" name="caseFile" id="caseFile" accept=".pdf">
+
+        <label for="photo">Upload Related Photo:</label>
+        <input type="file" name="photo" id="photo" accept="image/*">
+      </fieldset>
+
+      <button type="submit">Submit Case</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ngurinzira Silas. All rights reserved.</p>
+  </footer>
+</body>
+</html>
